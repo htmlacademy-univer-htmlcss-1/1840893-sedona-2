@@ -83,7 +83,11 @@
                 ><input type="radio" name="motel" id="motel" />Мотель</label
               >
               <label for="apartment"
-                ><input type="radio" name="apartment" id="apartment" />Апартаменты</label
+                ><input
+                  type="radio"
+                  name="apartment"
+                  id="apartment"
+                />Апартаменты</label
               >
             </li>
             <li class="search-item">
@@ -219,8 +223,14 @@
           <p class="subscribe-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <input class="subscribe-email" type="text" placeholder="Ваш e-mail" />
-          <button class="subscribe-button" type="button">Подписаться</button>
+          <input
+            class="subscribe-email"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Ваш e-mail"
+          />
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
