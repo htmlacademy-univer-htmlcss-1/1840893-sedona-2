@@ -40,60 +40,108 @@
     </header>
     <main class="main-inner">
       <section class="search">
-        <h1 class="main-header">Гостинцы Седоны</h1>
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">
-              <span class="visually-hidden">Главная</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-        <form action="http://echo.htmlacademy.ru" method="post">
-          <ul class="search-list">
-            <li class="search-item">
-              <span class="search-item-title">Инфраструктура:</span>
-              <label for="pool"
-                ><input type="checkbox" name="pool" id="pool" checked />
-                Бассейн</label
-              >
-              <label for="parking">
-                <input
-                  type="checkbox"
-                  name="parking"
-                  id="parking"
-                  checked
-                />Парковка</label
-              >
-              <label for="wifi"></label>
-              <input type="checkbox" name="wifi" id="wifi" />Wi-Fi
+        <header class="breadcrumbs">
+          <h1 class="main-header">Гостинцы Седоны</h1>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">
+                <span class="visually-hidden">Главная</span>
+              </a>
             </li>
-            <li class="search-item">
-              <span class="search-item-title"> Тип жилья </span>
-              <label for="hotel"
-                ><input
-                  type="radio"
-                  name="hotel"
-                  id="hotel"
-                  checked
-                />Гостиница</label
-              >
-              <label for="motel"
-                ><input type="radio" name="motel" id="motel" />Мотель</label
-              >
-              <label for="apartment"
-                ><input type="radio" name="apartment" id="apartment" />Апартаменты</label
-              >
-            </li>
-            <li class="search-item">
-              <button class="button search-approve" type="submit">
-                Применить
-              </button>
-              <button class="button search-reset" type="reset">Сбросить</button>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
+        </header>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="search-item">
+            <legend class="search-item-title">Инфраструктура:</legend>
+            <ul class="search-options">
+              <li>
+                <label for="pool">
+                  <input type="checkbox" name="pool" id="pool" checked />
+                  Бассейн
+                </label>
+              </li>
+              <li>
+                <label for="parking">
+                  <input type="checkbox" name="parking" id="parking" checked />
+                  Парковка
+                </label>
+              </li>
+              <li>
+                <label for="wifi">
+                  <input type="checkbox" name="wifi" id="wifi" />
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="search-item">
+            <legend class="search-item-title">Тип жилья:</legend>
+            <ul class="search-options">
+              <li>
+                <label for="hotel">
+                  <input
+                    type="radio"
+                    name="housing"
+                    id="hotel"
+                    value="hotel"
+                    checked
+                  />
+                  Гостиница
+                </label>
+              </li>
+              <li>
+                <label for="motel">
+                  <input type="radio" name="housing" id="motel" value="motel" />
+                  Мотель
+                </label>
+              </li>
+              <li>
+                <label for="apartment">
+                  <input
+                    type="radio"
+                    name="housing"
+                    id="apartment"
+                    value="apartment"
+                  />
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="search-item">
+            <legend class="search-item-title">Стоимость, ₽:</legend>
+            <ul class="search-options">
+              <li>
+                <label for="price-min">
+                  <input
+                    type="text"
+                    id="price-min"
+                    name="price_min"
+                    value="0 От"
+                  />
+                </label>
+              </li>
+              <li>
+                <label for="price-max">
+                  <input
+                    type="text"
+                    id="price-max"
+                    name="price_max"
+                    value="5000 До"
+                  />
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <li class="search-item">
+            <button class="button search-approve" type="submit">
+              Применить
+            </button>
+            <button class="button search-reset" type="reset">Сбросить</button>
+          </li>
         </form>
       </section>
       <section class="catalog">
@@ -121,8 +169,6 @@
             </button>
           </li>
         </ul>
-      </section>
-      <section class="results">
         <ul class="results-list">
           <li class="resilts-item">
             <a class="results-link" href="#"
@@ -206,12 +252,12 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li><button class="page active">1</button></li>
-          <li><button class="page">2</button></li>
-          <li><button class="page">3</button></li>
-          <li><button class="page">4</button></li>
+          <li><a class="page active" href="#">1</a></li>
+          <li><a class="page" href="#">2</a></li>
+          <li><a class="page" href="#">3</a></li>
+          <li><a class="page" href="#">4</a></li>
           <li><span class="dots">...</span></li>
-          <li><button class="page">10</button></li>
+          <li><a class="page" href="#">10</a></li>
         </ul>
       </section>
       <section class="subscribe">
@@ -220,8 +266,14 @@
           <p class="subscribe-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <input class="subscribe-email" type="text" placeholder="Ваш e-mail" />
-          <button class="subscribe-button" type="button">Подписаться</button>
+          <input
+            class="subscribe-email"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Ваш e-mail"
+          />
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
