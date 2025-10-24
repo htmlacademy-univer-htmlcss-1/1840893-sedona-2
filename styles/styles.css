@@ -49,12 +49,43 @@ body {
   border: none;
 }
 
+.btn-big {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #e5e5e5;
+}
+
 .additional-button {
   background-color: #82b3d3;
 }
 
+.additional-button:hover,
+.additional-button:focus {
+  background-color: #68a2ca;
+}
+
 .selected-button {
   background-color: #7db54f;
+}
+
+.selected-button:hover,
+.selected-button:focus {
+  background-color: #6c9e42;
 }
 
 /* Welcome секция */
@@ -214,6 +245,22 @@ body {
 
 .search-reset {
   background-color: transparent;
+}
+
+.search-reset:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.search-reset:focus {
+  background-color: transparent;
+  outline: none;
+  border: 3px solid #83b3d3;
+}
+
+.search-reset:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* Фильтрация на странице каталога */
