@@ -65,9 +65,13 @@ body {
   background-image: url("../images/decorative/main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+}
 
 /* Заголовки */
+
+.text-align {
+  text-align: center;
+}
 
 .header-2 {
   font-size: 30px;
