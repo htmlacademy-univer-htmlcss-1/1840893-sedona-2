@@ -89,10 +89,10 @@ body {
   text-transform: uppercase;
 }
 
-.header-3-color {
+.main-background-color .header-3,
+.main-background-color .text {
   color: #fff;
 }
-
 /* Текст после заголовков */
 
 .slogan-text {
