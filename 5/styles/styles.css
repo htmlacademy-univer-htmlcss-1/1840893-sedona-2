@@ -1,0 +1,549 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after  {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
+}
+
+/* Ссылки в навигации */
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 339px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: left;
+  color: #000;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+}
+
+/* Кнопки */
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background: #756157;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-big {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #e5e5e5;
+}
+
+.additional-button {
+  background-color: #82b3d3;
+}
+
+.additional-button:hover,
+.additional-button:focus {
+  background-color: #68a2ca;
+}
+
+.selected-button {
+  background-color: #7db54f;
+}
+
+.selected-button:hover,
+.selected-button:focus {
+  background-color: #6c9e42;
+}
+
+/* Welcome секция */
+
+.welcome {
+  color: #fff;
+  background-color: #000;
+  background-image: url("../images/decorative/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 485px;
+}
+
+/* Заголовки */
+
+.text-align-center {
+  text-align: center;
+}
+
+.header-2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+.header-3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.main-background-color .header-3,
+.main-background-color .text {
+  color: #fff;
+}
+/* Текст после заголовков */
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-header {
+  padding: 69px 0;
+  margin-bottom: 21px;
+}
+
+.advantages-header .header-2 {
+  max-width: 620px;
+}
+
+.comfort-header {
+  padding: 64px 0;
+}
+
+.comfort-header .header-2 {
+  max-width: 505px;
+}
+
+.slogan-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+.text-color {
+  color: #fff;
+}
+
+/* Блоки */
+
+.advantages-list,
+.comfort-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item,
+.comfort-item {
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-item:nth-child(1) {
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.advantages-item:nth-child(2) {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 800px;
+  padding: 0;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(4),
+.advantages-item:nth-child(5) {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 400px;
+}
+
+.advantages-item:nth-child(6) {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 800px;
+  padding: 0;
+}
+
+.advantages-item:nth-child(7) {
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* Фоны */
+
+.additional-background-color-1 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.additional-background-color-2 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.additional-background-color-3 {
+  background-color: #f2f2f2;
+}
+
+.main-background-color {
+  background-color: #82b3d3;
+}
+
+/* Блок подписки на основной странице*/
+
+.subscribe-theme-custom .header-2 {
+  color: #fff;
+}
+
+.subscribe-theme-custom .slogan-text {
+  color: #fff;
+}
+
+.subscribe-theme-custom {
+  background-color: #8daab8;
+  background-image: url("../images/decorative/Subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.find {
+  width: 592px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+
+.form-subscribe {
+  width: 684px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe {
+  padding: 96px 258px 104px;
+}
+
+/* Подвал */
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-phone {
+  text-align: center;
+}
+
+.contacts-phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Страница каталога */
+
+/* Заголовки */
+
+.header-1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Фоны */
+
+.search {
+  color: #fff;
+  background-color: #8daab8;
+  background-image: url("../images/decorative/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+/* Форма поиска */
+
+.search-container {
+  width: 1060px;
+  padding: 35px 70px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.search-form {
+  display: flex;
+  gap: 25px;
+}
+
+.search-item {
+  border: none;
+  flex: 1;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.search-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  min-width: 450px;
+}
+
+.search-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.search-label {
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+/* Кнопки */
+
+.search-reset {
+  background-color: transparent;
+}
+
+.search-reset:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.search-reset:focus {
+  background-color: transparent;
+  outline: none;
+  border: 3px solid #83b3d3;
+}
+
+.search-reset:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Фильтрация на странице каталога */
+
+.catalog {
+  width: 1060px;
+  padding: 50px 70px 0;
+}
+
+.catalog .header-2 {
+  text-align: left;
+  width: 338px;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.filter {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+.filter-group {
+  width: 522px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Результат поиска на странице каталога */
+
+.results-list {
+  display: flex;
+  width: 1060px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  list-style-type: none;
+  margin-bottom: 80px;
+}
+
+.results-link {
+  text-decoration: none;
+}
+
+.results-item {
+  width: 340px;
+}
+
+.results-link .header-3 {
+  text-align: left;
+  text-transform: inherit;
+}
+
+.results-info {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+.results-rating {
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Пагинация */
+
+.pagination {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.page {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.active {
+  color: #000;
+}
