@@ -7,7 +7,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <div class="main-container">
+    <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
           <a href="index.html">
@@ -69,109 +69,105 @@
               method="post"
               class="search-form"
             >
-              <div class="search-group">
-                <fieldset class="search-item">
-                  <legend class="search-item-title">Инфраструктура:</legend>
-                  <ul class="search-options">
-                    <li>
-                      <label for="pool" class="search-label">
-                        <input type="checkbox" name="pool" id="pool" checked />
-                        Бассейн
-                      </label>
-                    </li>
-                    <li>
-                      <label for="parking" class="search-label">
-                        <input
-                          type="checkbox"
-                          name="parking"
-                          id="parking"
-                          checked
-                        />
-                        Парковка
-                      </label>
-                    </li>
-                    <li>
-                      <label for="wifi" class="search-label">
-                        <input type="checkbox" name="wifi" id="wifi" />
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="search-item">
-                  <legend class="search-item-title">Тип жилья:</legend>
-                  <ul class="search-options">
-                    <li>
-                      <label for="hotel" class="search-label">
-                        <input
-                          type="radio"
-                          name="housing"
-                          id="hotel"
-                          value="hotel"
-                          checked
-                        />
-                        Гостиница
-                      </label>
-                    </li>
-                    <li>
-                      <label for="motel" class="search-label">
-                        <input
-                          type="radio"
-                          name="housing"
-                          id="motel"
-                          value="motel"
-                        />
-                        Мотель
-                      </label>
-                    </li>
-                    <li>
-                      <label for="apartment" class="search-label">
-                        <input
-                          type="radio"
-                          name="housing"
-                          id="apartment"
-                          value="apartment"
-                        />
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="search-group">
-                <fieldset class="search-item">
-                  <legend class="search-item-title">Стоимость, ₽:</legend>
-                  <ul class="search-options">
-                    <li>
-                      <label for="price-min">
-                        <input
-                          type="text"
-                          id="price-min"
-                          name="price_min"
-                          value="0 От"
-                        />
-                      </label>
-                    </li>
-                    <li>
-                      <label for="price-max">
-                        <input
-                          type="text"
-                          id="price-max"
-                          name="price_max"
-                          value="5000 До"
-                        />
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="search-item">
-                  <button class="button additional-button" type="submit">
-                    Применить
-                  </button>
-                  <button class="button search-reset" type="reset">
-                    Сбросить
-                  </button>
-                </div>
+              <fieldset class="search-item">
+                <legend class="search-item-title">Инфраструктура:</legend>
+                <ul class="search-options">
+                  <li>
+                    <label for="pool" class="search-label">
+                      <input type="checkbox" name="pool" id="pool" checked />
+                      Бассейн
+                    </label>
+                  </li>
+                  <li>
+                    <label for="parking" class="search-label">
+                      <input
+                        type="checkbox"
+                        name="parking"
+                        id="parking"
+                        checked
+                      />
+                      Парковка
+                    </label>
+                  </li>
+                  <li>
+                    <label for="wifi" class="search-label">
+                      <input type="checkbox" name="wifi" id="wifi" />
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-item">
+                <legend class="search-item-title">Тип жилья:</legend>
+                <ul class="search-options">
+                  <li>
+                    <label for="hotel" class="search-label">
+                      <input
+                        type="radio"
+                        name="housing"
+                        id="hotel"
+                        value="hotel"
+                        checked
+                      />
+                      Гостиница
+                    </label>
+                  </li>
+                  <li>
+                    <label for="motel" class="search-label">
+                      <input
+                        type="radio"
+                        name="housing"
+                        id="motel"
+                        value="motel"
+                      />
+                      Мотель
+                    </label>
+                  </li>
+                  <li>
+                    <label for="apartment" class="search-label">
+                      <input
+                        type="radio"
+                        name="housing"
+                        id="apartment"
+                        value="apartment"
+                      />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-item">
+                <legend class="search-item-title">Стоимость, ₽:</legend>
+                <ul class="search-options">
+                  <li>
+                    <label for="price-min">
+                      <input
+                        type="text"
+                        id="price-min"
+                        name="price_min"
+                        value="0 От"
+                      />
+                    </label>
+                  </li>
+                  <li>
+                    <label for="price-max">
+                      <input
+                        type="text"
+                        id="price-max"
+                        name="price_max"
+                        value="5000 До"
+                      />
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="search-item">
+                <button class="button additional-button" type="submit">
+                  Применить
+                </button>
+                <button class="button search-reset" type="reset">
+                  Сбросить
+                </button>
               </div>
             </form>
           </div>
