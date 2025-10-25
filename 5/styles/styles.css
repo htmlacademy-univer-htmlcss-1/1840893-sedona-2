@@ -76,7 +76,6 @@ body {
 
 .navigation-user {
   max-width: 268px;
-  margin-left: auto;
 }
 
 /* Кнопки */
@@ -169,6 +168,7 @@ body {
 .main-background-color .text {
   color: #fff;
 }
+
 /* Текст после заголовков */
 
 .section-header {
@@ -178,17 +178,8 @@ body {
   align-items: center;
 }
 
-.advantages-header {
-  padding: 69px 0;
-  margin-bottom: 21px;
-}
-
 .advantages-header .header-2 {
   max-width: 620px;
-}
-
-.comfort-header {
-  padding: 64px 0;
 }
 
 .comfort-header .header-2 {
@@ -220,50 +211,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.advantages-item,
-.comfort-item {
-  width: 400px;
-  height: 385px;
-  padding: 103px 85px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.advantages-item:nth-child(1) {
-  flex-basis: 400px;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-.advantages-item:nth-child(2) {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 800px;
-  padding: 0;
-}
-
-.advantages-item:nth-child(3),
-.advantages-item:nth-child(4),
-.advantages-item:nth-child(5) {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 400px;
-}
-
-.advantages-item:nth-child(6) {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 800px;
-  padding: 0;
-}
-
-.advantages-item:nth-child(7) {
-  flex-basis: 400px;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 
 /* Фоны */
@@ -308,7 +255,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 0;
 }
 
 .form-subscribe {
@@ -316,10 +262,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.subscribe {
-  padding: 96px 258px 104px;
 }
 
 /* Подвал */
@@ -366,10 +308,6 @@ body {
 
 /* Хлебные крошки */
 
-.breadcrumbs {
-  margin-bottom: 40px;
-}
-
 .breadcrumbs-list {
   display: flex;
   align-items: center;
@@ -386,36 +324,10 @@ body {
 
 .search-container {
   width: 1060px;
-  padding: 35px 70px 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.search-form {
-  display: flex;
-  gap: 25px;
 }
 
 .search-item {
   border: none;
-  flex: 1;
-  width: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.search-group {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  min-width: 450px;
 }
 
 .search-item-title {
@@ -458,7 +370,6 @@ body {
 
 .catalog {
   width: 1060px;
-  padding: 50px 70px 0;
 }
 
 .catalog .header-2 {
@@ -467,12 +378,8 @@ body {
 }
 
 .catalog-header {
-  display: flex;
-  justify-content: space-between;
   width: 1060px;
-  margin: 0 auto;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .filter {
@@ -486,7 +393,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
 }
 
 /* Результат поиска на странице каталога */
@@ -495,9 +401,7 @@ body {
   display: flex;
   width: 1060px;
   flex-wrap: wrap;
-  margin: 0 auto;
   list-style-type: none;
-  margin-bottom: 80px;
 }
 
 .results-link {
