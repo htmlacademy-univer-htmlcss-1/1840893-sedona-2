@@ -226,8 +226,6 @@ body {
   width: 230px;
   padding-left: 85px;
   padding-right: 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-item:nth-child(2) {
