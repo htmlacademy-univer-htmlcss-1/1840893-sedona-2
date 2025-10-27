@@ -380,10 +380,8 @@ body {
 /* Фильтрация на странице каталога */
 
 .search-container {
-  display: flex;
   margin: 0 auto;
   width: 1060px;
-  flex-direction: column;
 }
 
 .search-form {
