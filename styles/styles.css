@@ -437,6 +437,11 @@ body {
 
 .results-item {
   width: 340px;
+  margin-right: 20px;
+}
+
+.results-item:nth-child(3n){
+  margin-right: 0;
 }
 
 .results-link {
