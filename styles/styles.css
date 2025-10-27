@@ -428,11 +428,11 @@ body {
 /* Результат поиска на странице каталога */
 
 .results-list {
-  margin: 0;
   padding: 0;
   width: 1060px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .results-item {
