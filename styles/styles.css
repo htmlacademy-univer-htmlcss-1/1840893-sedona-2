@@ -280,6 +280,12 @@ body {
 
 /* Подвал */
 
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+}
+
 .contacts {
   display: flex;
   margin: 0 auto;
