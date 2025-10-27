@@ -231,12 +231,12 @@ body {
 }
 
 .advantages-item:nth-child(2) {
-  flex-basis: 800px;
+  width: 800px;
   padding: 0;
 }
 
 .advantages-item:nth-child(6) {
-  flex-basis: 800px;
+  width: 800px;
   padding: 0;
 }
 
