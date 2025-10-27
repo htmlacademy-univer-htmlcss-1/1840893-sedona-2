@@ -285,12 +285,11 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1060px;
+  margin: 0 auto;
 }
 
 .contacts {
-  display: flex;
   margin: 0 auto;
-  justify-content: space-between;
   width: 1200px;
 }
 
