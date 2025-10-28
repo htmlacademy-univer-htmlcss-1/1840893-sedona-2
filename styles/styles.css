@@ -51,6 +51,14 @@ body {
 
 /* Ссылки в навигации */
 
+.navigation:last-child{
+  margin-left: auto;
+}
+
+.navigation-logo{
+  margin-right: 30px;
+}
+
 .navigation-list {
   width: 500px;
   margin: 0;
@@ -59,7 +67,6 @@ body {
 
 .navigation-user {
   max-width: 300px;
-  margin-left: auto;
 }
 
 .navigation-link {
