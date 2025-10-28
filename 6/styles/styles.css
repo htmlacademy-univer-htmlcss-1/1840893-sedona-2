@@ -42,6 +42,7 @@ body {
 .page-header {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
 }
 
 .main-container {
@@ -389,16 +390,11 @@ body {
   justify-content: space-between;
 }
 
-.catalog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .catalog-header {
   display: flex;
   width: 1060px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .filter-group {
@@ -437,15 +433,12 @@ body {
   width: 1060px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .results-item {
   width: 340px;
-  margin-right: 20px;
-}
-
-.results-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .results-link {
