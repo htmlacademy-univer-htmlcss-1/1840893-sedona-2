@@ -40,7 +40,7 @@ body {
 }
 
 .page-header {
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
   display: flex;
 }
@@ -51,10 +51,12 @@ body {
 
 /* Ссылки в навигации */
 
-.navigation {
-  display: flex;
-  margin: 0 auto;
-  width: 1060px;
+.navigation:last-child{
+  margin-left: auto;
+}
+
+.navigation-logo{
+  margin-right: 30px;
 }
 
 .navigation-list {
@@ -65,7 +67,6 @@ body {
 
 .navigation-user {
   max-width: 300px;
-  margin-left: auto;
 }
 
 .navigation-link {
