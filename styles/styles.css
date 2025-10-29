@@ -334,11 +334,26 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  padding: 40px 30px;
+  align-items: center;
 }
 
 .contacts {
   margin: 0 auto;
   width: 1200px;
+}
+
+.contacts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.contacts-item {
+  min-width: 47px;
+  min-height: 40px;
+  background-color: blueviolet;
 }
 
 .contacts-phone {
