@@ -57,6 +57,12 @@ body {
   align-items: center;
 }
 
+.header-logo-link {
+  position: relative;
+  display: block;
+  height: 64px;
+}
+
 .main-container {
   flex-grow: 1;
 }
