@@ -377,6 +377,9 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
 }
 
 /* Фоны */
@@ -391,11 +394,29 @@ body {
 
 /* Хлебные крошки */
 
+.breadcrumbs-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 28px;
+  /* Не уверена, нужно ли тут задать минимальную ширину (для иконки домика)? Или убраться и оставить только отступ справа? */
+  min-width: 28px;
+}
+
 .breadcrumbs-link {
   color: #fff;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+  display: block;
 }
 
 /* Форма поиска */
@@ -445,6 +466,8 @@ body {
 .search-container {
   margin: 0 auto;
   width: 1060px;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .search-form {
