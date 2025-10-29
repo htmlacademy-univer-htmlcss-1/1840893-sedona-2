@@ -260,13 +260,15 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantages-item,
 .comfort-item {
-  width: 230px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 102px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-item:nth-child(2) {
