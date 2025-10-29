@@ -348,6 +348,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  width: 142px;
 }
 
 .contacts-item {
@@ -590,6 +592,7 @@ body {
   list-style-type: none;
   box-sizing: border-box;
   padding-top: 40px;
+  flex-wrap: wrap;
 }
 
 .pagination-item:not(:last-child) {
