@@ -85,14 +85,14 @@ body {
   width: 268px;
 }
 
- .navigation-user .navigation-link {
+.navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
   padding: 22px 12px;
   background-color: blueviolet;
 }
 
-.navigation-user .button{
+.navigation-user .button {
   margin: 14px 0 14px 20px;
 }
 
@@ -244,6 +244,8 @@ body {
 .advantages-header {
   width: 651px;
   margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .advantages-list,
@@ -280,6 +282,8 @@ body {
 .comfort-header {
   width: 505px;
   margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /* Блок Заинтересовались */
@@ -287,6 +291,8 @@ body {
 .find {
   width: 592px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 /* Блок подписки на основной странице*/
@@ -294,6 +300,8 @@ body {
 .subscribe-container {
   width: 684px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe-theme-custom .header-2 {
