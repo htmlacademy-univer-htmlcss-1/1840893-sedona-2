@@ -1,0 +1,629 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.page-header {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-link {
+  position: relative;
+  display: block;
+  height: 64px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* Ссылки в навигации */
+
+.navigation:last-child {
+  margin-left: auto;
+}
+
+.navigation-logo {
+  margin-right: 30px;
+  align-self: flex-start;
+}
+
+.navigation-list {
+  width: 339px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.navigation-user {
+  width: 268px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+  padding: 22px 12px;
+  background-color: blueviolet;
+}
+
+.navigation-user .button {
+  margin: 14px 0 14px 20px;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: left;
+  color: #000;
+  padding: 20px 16px;
+  display: block;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 485px;
+}
+
+/* Кнопки */
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background: #756157;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-big {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #e5e5e5;
+}
+
+.additional-button {
+  background-color: #82b3d3;
+}
+
+.additional-button:hover,
+.additional-button:focus {
+  background-color: #68a2ca;
+}
+
+.selected-button {
+  background-color: #7db54f;
+}
+
+.selected-button:hover,
+.selected-button:focus {
+  background-color: #6c9e42;
+}
+
+/* Welcome секция */
+
+.welcome {
+  color: #fff;
+  background-color: #000;
+  background-image: url("../images/decorative/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Заголовки */
+
+.text-align-center {
+  text-align: center;
+}
+
+.header-2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+.header-3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.main-background-color .header-3,
+.main-background-color .text {
+  color: #fff;
+}
+/* Текст после заголовков */
+
+.slogan-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+.text-color {
+  color: #fff;
+}
+
+/* Фоны */
+
+.additional-background-color-1 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.additional-background-color-2 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.additional-background-color-3 {
+  background-color: #f2f2f2;
+}
+
+.main-background-color {
+  background-color: #82b3d3;
+}
+
+/* Преимущества */
+
+.advantages-header {
+  width: 651px;
+  margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
+.advantages-list,
+.comfort-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.advantages-item,
+.comfort-item {
+  padding: 102px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-item:nth-child(2) {
+  width: 800px;
+  padding: 0;
+}
+
+.advantages-item:nth-child(6) {
+  width: 800px;
+  padding: 0;
+}
+
+.advantages-image {
+  display: block;
+}
+
+/* Блок Комфорт */
+
+.comfort-header {
+  width: 505px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* Блок Заинтересовались */
+
+.find {
+  width: 592px;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* Блок подписки на основной странице*/
+
+.subscribe-container {
+  width: 684px;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.subscribe-theme-custom .header-2 {
+  color: #fff;
+}
+
+.subscribe-theme-custom .slogan-text {
+  color: #fff;
+}
+
+.subscribe-theme-custom {
+  background-color: #8daab8;
+  background-image: url("../images/decorative/Subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Подвал */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  align-items: center;
+}
+
+.contacts {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.contacts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 142px;
+}
+
+.contacts-item {
+  min-width: 47px;
+  min-height: 40px;
+  background-color: blueviolet;
+}
+
+.contacts-phone {
+  text-align: center;
+}
+
+.contacts-phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Страница каталога */
+
+/* Заголовки */
+
+.header-1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+/* Фоны */
+
+.search {
+  color: #fff;
+  background-color: #8daab8;
+  background-image: url("../images/decorative/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 28px;
+  /* Не уверена, нужно ли тут задать минимальную ширину (для иконки домика)? Или убраться и оставить только отступ справа? */
+  min-width: 28px;
+}
+
+.breadcrumbs-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Форма поиска */
+
+.search-item {
+  border: none;
+}
+
+.search-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.search-label {
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+/* Кнопки */
+
+.search-reset {
+  background-color: transparent;
+}
+
+.search-reset:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.search-reset:focus {
+  background-color: transparent;
+  outline: none;
+  border: 3px solid #83b3d3;
+}
+
+.search-reset:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Фильтрация на странице каталога */
+
+.search-container {
+  margin: 0 auto;
+  width: 1060px;
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-header {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.filter-group {
+  margin-left: auto;
+  width: 522px;
+  display: flex;
+}
+
+.catalog .header-2 {
+  text-align: left;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.catalog-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.filter {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+  width: 292px;
+  height: 49px;
+  margin: 0;
+  padding: 14px 99px 14px 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.view {
+  width: 160px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.view-button {
+  width: 48px;
+  height: 48px;
+}
+
+/* Результат поиска на странице каталога */
+
+.results-list {
+  padding: 0;
+  width: 1060px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.results-item {
+  width: 340px;
+}
+
+.results-link {
+  text-decoration: none;
+}
+
+.results-link .header-3 {
+  text-align: left;
+  text-transform: inherit;
+}
+
+.results-info {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+.results-rating {
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Пагинация */
+
+.divider {
+  width: 1060px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 40px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: 70px;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.page {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  text-align: center;
+}
+
+.active {
+  color: #000;
+}
+
+.dots {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  text-align: center;
+  display: block;
+}
