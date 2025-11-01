@@ -70,7 +70,7 @@ body {
 
 /* Ссылки в навигации */
 
-.navigation{
+.navigation {
   align-self: flex-start;
 }
 
@@ -214,6 +214,25 @@ body {
 .main-background-color .text {
   color: #fff;
 }
+
+.advantages-item .header-3,
+.comfort-item .header-3 {
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.advantages-item .text,
+.comfort-item .text {
+  margin: 0;
+}
+
+.advantages-divider {
+  padding-bottom: 30px;
+  width: 60px;
+  border-top: 2px solid #e6e6e6;
+  margin: 0 auto;
+}
+
 /* Текст после заголовков */
 
 .slogan-text {
@@ -268,6 +287,11 @@ body {
   list-style-type: none;
 }
 
+.advantages-item.additionail-padding-top-bottom{
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
 .advantages-item,
 .comfort-item {
   padding: 102px 85px;
@@ -297,6 +321,11 @@ body {
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+.comfort-item.additional-padding-top-bottom{
+  padding-top: 81px;
+  padding-bottom: 81px;
 }
 
 /* Блок Заинтересовались */
