@@ -291,7 +291,7 @@ body {
   list-style-type: none;
 }
 
-.advantages-item.additionail-padding-top-bottom{
+.advantages-item.additionail-padding-top-bottom {
   padding-top: 112px;
   padding-bottom: 112px;
 }
@@ -327,7 +327,7 @@ body {
   padding-bottom: 64px;
 }
 
-.comfort-item.additional-padding-top-bottom{
+.comfort-item.additional-padding-top-bottom {
   padding-top: 81px;
   padding-bottom: 81px;
 }
@@ -341,7 +341,8 @@ body {
   padding-bottom: 96px;
 }
 
-.find > .slogan-text, .subscribe-text{
+.find > .slogan-text,
+.subscribe-text {
   padding-bottom: 54px;
 }
 
@@ -410,6 +411,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+}
+
+.contacts-phone-number:hover,
+.contacts-phone-number:focus {
+  color: #756157;
+}
+
+.contacts-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Страница каталога */
