@@ -94,6 +94,7 @@ body {
 
 .navigation-user {
   width: 268px;
+  align-items: center;
 }
 
 .navigation-user .navigation-link {
