@@ -61,6 +61,7 @@ body {
   position: relative;
   display: block;
   height: 64px;
+  align-self: flex-start;
 }
 
 .main-container {
@@ -68,6 +69,10 @@ body {
 }
 
 /* Ссылки в навигации */
+
+.navigation {
+  align-self: flex-start;
+}
 
 .navigation:last-child {
   margin-left: auto;
@@ -79,7 +84,7 @@ body {
 }
 
 .navigation-list {
-  width: 339px;
+  width: 500px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -89,6 +94,7 @@ body {
 
 .navigation-user {
   width: 268px;
+  align-items: center;
 }
 
 .navigation-user .navigation-link {
@@ -195,6 +201,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .header-3 {
@@ -209,12 +217,32 @@ body {
 .main-background-color .text {
   color: #fff;
 }
+
+.advantages-item .header-3,
+.comfort-item .header-3 {
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.advantages-item .text,
+.comfort-item .text {
+  margin: 0;
+}
+
+.advantages-divider {
+  padding-bottom: 30px;
+  width: 60px;
+  border-top: 2px solid #e6e6e6;
+  margin: 0 auto;
+}
+
 /* Текст после заголовков */
 
 .slogan-text {
   font-size: 22px;
   line-height: 26px;
   color: #333;
+  margin: 0;
 }
 
 .text {
@@ -263,6 +291,11 @@ body {
   list-style-type: none;
 }
 
+.advantages-item.additionail-padding-top-bottom {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
 .advantages-item,
 .comfort-item {
   padding: 102px 85px;
@@ -294,6 +327,11 @@ body {
   padding-bottom: 64px;
 }
 
+.comfort-item.additional-padding-top-bottom {
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+
 /* Блок Заинтересовались */
 
 .find {
@@ -301,6 +339,11 @@ body {
   margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 96px;
+}
+
+.find > .slogan-text,
+.subscribe-text {
+  padding-bottom: 54px;
 }
 
 /* Блок подписки на основной странице*/
@@ -349,7 +392,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 142px;
+  max-width: 282px;
 }
 
 .contacts-item {
@@ -368,6 +411,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+}
+
+.contacts-phone-number:hover,
+.contacts-phone-number:focus {
+  color: #756157;
+}
+
+.contacts-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Страница каталога */
