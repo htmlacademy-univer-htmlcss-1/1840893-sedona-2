@@ -392,7 +392,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 142px;
+  max-width: 282px;
 }
 
 .contacts-item {
