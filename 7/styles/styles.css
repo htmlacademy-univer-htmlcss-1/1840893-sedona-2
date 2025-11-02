@@ -368,11 +368,14 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
   padding: 40px 30px;
   align-items: center;
+}
+
+.social-icon-list{
+  width: 142px;
 }
 
 .contacts {
@@ -386,7 +389,6 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  max-width: 282px;
 }
 
 .contacts-item {
@@ -397,6 +399,13 @@ body {
 
 .contacts-phone {
   text-align: center;
+  width: 720px;
+  margin-left: auto;
+}
+
+.owner-link{
+  width: 115px;
+  margin-left: auto;
 }
 
 .contacts-phone-number {
@@ -573,7 +582,6 @@ body {
   padding: 0;
   margin-left: auto;
   display: flex;
-  justify-content: center;
 }
 
 .view-item:not(:last-child) {
