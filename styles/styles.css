@@ -573,7 +573,6 @@ body {
   padding: 0;
   margin-left: auto;
   display: flex;
-  justify-content: center;
 }
 
 .view-item:not(:last-child) {
