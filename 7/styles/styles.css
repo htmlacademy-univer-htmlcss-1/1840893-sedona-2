@@ -54,14 +54,12 @@ body {
   width: 1060px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
 }
 
 .header-logo-link {
   position: relative;
   display: block;
   height: 64px;
-  align-self: flex-start;
 }
 
 .main-container {
@@ -70,9 +68,6 @@ body {
 
 /* Ссылки в навигации */
 
-.navigation {
-  align-self: flex-start;
-}
 
 .navigation:last-child {
   margin-left: auto;
@@ -80,7 +75,6 @@ body {
 
 .navigation-logo {
   margin-right: 30px;
-  align-self: flex-start;
 }
 
 .navigation-list {
@@ -411,6 +405,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  font-style: normal;
 }
 
 .contacts-phone-number:hover,
@@ -536,19 +531,20 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 40px;
+  align-items: center;
 }
 
 .filter-group {
   margin-left: auto;
   width: 522px;
   display: flex;
+  line-height: 20px;
 }
 
 .catalog .header-2 {
   text-align: left;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 0;
 }
 
 .catalog-title {
@@ -575,7 +571,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
+  margin-left: auto;
   display: flex;
   justify-content: center;
 }
