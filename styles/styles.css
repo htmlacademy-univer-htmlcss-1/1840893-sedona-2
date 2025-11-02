@@ -598,14 +598,66 @@ body {
 .results-list {
   padding: 0;
   width: 1060px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 16px;
   margin: 0 auto;
 }
 
 .results-item {
-  width: 340px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr;
+  gap: 16px 20px;
+  padding: 19px;
+  border: 1px solid #e6e6e6;
+  grid-template-areas:
+    "image image"
+    "header header"
+    "type price"
+    "more favorite"
+    "stars rating";
+}
+
+.image {
+  grid-area: image;
+}
+
+.title {
+  grid-area: header;
+}
+
+.type {
+  grid-area: type;
+}
+
+.price {
+  grid-area: price;
+  text-align: right;
+}
+
+.more {
+  grid-area: more;
+  align-self: center;
+}
+
+.favorite {
+  grid-area: favorite;
+  align-self: center;
+}
+
+.stars {
+  grid-area: stars;
+}
+
+.rating {
+  grid-area: rating;
+  text-align: center;
+}
+
+.results-image{
+  object-fit: contain;
 }
 
 .results-link {
@@ -615,6 +667,7 @@ body {
 .results-link .header-3 {
   text-align: left;
   text-transform: inherit;
+  margin: 0;
 }
 
 .results-info {
