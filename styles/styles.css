@@ -14,6 +14,17 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -45,17 +56,24 @@ body {
   display: flex;
 }
 
+.header-logo-link {
+  position: relative;
+  display: block;
+  height: 64px;
+}
+
 .main-container {
   flex-grow: 1;
 }
 
 /* Ссылки в навигации */
 
-.navigation:last-child{
+
+.navigation:last-child {
   margin-left: auto;
 }
 
-.navigation-logo{
+.navigation-logo {
   margin-right: 30px;
 }
 
@@ -63,10 +81,25 @@ body {
   width: 500px;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 300px;
+  width: 268px;
+  align-items: center;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+  padding: 22px 12px;
+  background-color: blueviolet;
+}
+
+.navigation-user .button {
+  margin: 14px 0 14px 20px;
 }
 
 .navigation-link {
@@ -77,11 +110,14 @@ body {
   text-decoration: none;
   text-align: left;
   color: #000;
+  padding: 20px 16px;
+  display: block;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
+  height: 485px;
 }
 
 /* Кнопки */
@@ -159,6 +195,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .header-3 {
@@ -173,12 +211,32 @@ body {
 .main-background-color .text {
   color: #fff;
 }
+
+.advantages-item .header-3,
+.comfort-item .header-3 {
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.advantages-item .text,
+.comfort-item .text {
+  margin: 0;
+}
+
+.advantages-divider {
+  padding-bottom: 30px;
+  width: 60px;
+  border-top: 2px solid #e6e6e6;
+  margin: 0 auto;
+}
+
 /* Текст после заголовков */
 
 .slogan-text {
   font-size: 22px;
   line-height: 26px;
   color: #333;
+  margin: 0;
 }
 
 .text {
@@ -214,6 +272,8 @@ body {
 .advantages-header {
   width: 651px;
   margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .advantages-list,
@@ -222,13 +282,20 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.advantages-item.additionail-padding-top-bottom {
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .advantages-item,
 .comfort-item {
-  width: 230px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 102px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-item:nth-child(2) {
@@ -250,6 +317,13 @@ body {
 .comfort-header {
   width: 505px;
   margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.comfort-item.additional-padding-top-bottom {
+  padding-top: 81px;
+  padding-bottom: 81px;
 }
 
 /* Блок Заинтересовались */
@@ -257,6 +331,13 @@ body {
 .find {
   width: 592px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.find > .slogan-text,
+.subscribe-text {
+  padding-bottom: 54px;
 }
 
 /* Блок подписки на основной странице*/
@@ -264,6 +345,8 @@ body {
 .subscribe-container {
   width: 684px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe-theme-custom .header-2 {
@@ -285,9 +368,14 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  padding: 40px 30px;
+  align-items: center;
+}
+
+.social-icon-list{
+  width: 142px;
 }
 
 .contacts {
@@ -295,8 +383,29 @@ body {
   width: 1200px;
 }
 
+.contacts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-item {
+  min-width: 47px;
+  min-height: 40px;
+  background-color: blueviolet;
+}
+
 .contacts-phone {
   text-align: center;
+  width: 720px;
+  margin-left: auto;
+}
+
+.owner-link{
+  width: 115px;
+  margin-left: auto;
 }
 
 .contacts-phone-number {
@@ -305,6 +414,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  font-style: normal;
+}
+
+.contacts-phone-number:hover,
+.contacts-phone-number:focus {
+  color: #756157;
+}
+
+.contacts-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Страница каталога */
@@ -316,6 +435,9 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
 }
 
 /* Фоны */
@@ -330,11 +452,29 @@ body {
 
 /* Хлебные крошки */
 
+.breadcrumbs-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 28px;
+  /* Не уверена, нужно ли тут задать минимальную ширину (для иконки домика)? Или убраться и оставить только отступ справа? */
+  min-width: 28px;
+}
+
 .breadcrumbs-link {
   color: #fff;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+  display: block;
 }
 
 /* Форма поиска */
@@ -384,6 +524,8 @@ body {
 .search-container {
   margin: 0 auto;
   width: 1060px;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .search-form {
@@ -396,16 +538,22 @@ body {
   width: 1060px;
   justify-content: space-between;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  align-items: center;
 }
 
 .filter-group {
   margin-left: auto;
   width: 522px;
   display: flex;
+  line-height: 20px;
 }
 
 .catalog .header-2 {
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-title {
@@ -420,11 +568,29 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333;
+  width: 292px;
+  height: 49px;
+  margin: 0;
+  padding: 14px 99px 14px 20px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .view {
   width: 160px;
-  margin-left: 70px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+}
+
+.view-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.view-button {
+  width: 48px;
+  height: 48px;
 }
 
 /* Результат поиска на странице каталога */
@@ -466,12 +632,27 @@ body {
 
 /* Пагинация */
 
+.divider {
+  width: 1060px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 40px;
+}
+
 .pagination {
   display: flex;
   margin: 0;
   padding: 0;
   margin-right: auto;
   margin-left: 70px;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .page {
@@ -479,9 +660,26 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  margin-right: 8px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  text-align: center;
 }
 
 .active {
   color: #000;
+}
+
+.dots {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  text-align: center;
+  display: block;
 }
