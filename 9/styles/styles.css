@@ -152,7 +152,7 @@ body {
   position: relative;
 }
 
-.navigation-link:not(.navigation-user .navigation-link):hover::after {
+.navigation-link:not(.navigation-user .navigation-link):hover::after, .navigation-link.active::after {
   content: "";
   border-bottom: 2px solid #756257;
   position: absolute;
