@@ -1014,8 +1014,9 @@ body {
   width: 60px;
   height: 60px;
   box-sizing: border-box;
-  padding-top: 11px;
+  padding-top: 19px;
   padding-bottom: 13px;
   text-align: center;
   display: block;
+  letter-spacing: 2px;
 }
