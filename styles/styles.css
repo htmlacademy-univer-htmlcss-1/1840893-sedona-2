@@ -152,14 +152,14 @@ body {
   position: relative;
 }
 
-.navigation-link:not(.navigation-user .navigation-link):hover::after, .navigation-link.active::after {
+.navigation-link:not(.navigation-user .navigation-link):hover::after,
+.navigation-link.active::after {
   content: "";
   border-bottom: 2px solid #756257;
   position: absolute;
-  top: calc(100% - 2px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 32px);
+  bottom: -1px;
+  left: 16px;
+  right: 16px;
 }
 
 .logo {
