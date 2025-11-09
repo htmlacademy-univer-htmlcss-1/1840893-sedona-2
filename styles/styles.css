@@ -945,12 +945,22 @@ body {
   text-transform: uppercase;
 }
 
-.star path {
-  fill: transparent;
+.results-star-rating {
+  display: flex;
+  gap: 4px; /* расстояние между звёздами */
 }
 
-.star.filled path {
-  fill: #83b3d3;
+.star {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  mask-image: url("../images/icons/star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.star.filled {
+  background-color: #83b3d3;
 }
 
 /* Пагинация */
