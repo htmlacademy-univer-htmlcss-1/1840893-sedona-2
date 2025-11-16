@@ -1346,6 +1346,11 @@ body {
   text-align: left;
 }
 
+.modal-item{
+  margin: 0;
+  padding: 0;
+}
+
 .modal-label {
   font-weight: 700;
   font-size: 20px;
@@ -1353,7 +1358,6 @@ body {
 }
 
 .modal-list {
-  list-style-type: none;
   display: grid;
   grid-template-columns: 137px 110px auto 110px;
   grid-template-rows: repeat(3, 96px) 60px;
