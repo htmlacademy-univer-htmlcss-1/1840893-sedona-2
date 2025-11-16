@@ -1514,7 +1514,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .modal-input-number {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 48px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .modal-input-number:hover,
