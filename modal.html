@@ -229,7 +229,7 @@
                       <label class="modal-label modal-label-check-in" for="check-in">Дата заезда:</label>
                     </p>
                     <p class="modal-item modal-input-check-in">
-                      <input class="modal-input modal-input-date" type="date" id="check-in">
+                      <input class="modal-input modal-input-date" type="date" id="check-in" name="check-in">
                       <span class="modal-message modal-error-message">Мы не можем отправить вас в прошлое.</span>
                     </p>
                     <!-- Вторая строка -->
@@ -237,7 +237,7 @@
                       <label class="modal-label modal-label-departure" for="departure">Дата выезда:</label>
                     </p>
                     <p class="modal-item modal-input-departure">
-                      <input class="modal-input modal-input-date" type="date" id="departure">
+                      <input class="modal-input modal-input-date" type="date" id="departure" name="departure">
                       <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
                     </p>
                     <!-- Третья строка -->
@@ -246,7 +246,7 @@
                     </p>
                     <p class="modal-item modal-input-adults">
                       <button class="decrement modal-mini-button" type="button"></button>
-                      <input class="modal-input modal-input-number" type="number" id="adults" value="2" max="99">
+                      <input class="modal-input modal-input-number" type="number" id="adults" value="2" max="99" name="adults">
                       <button class="increment modal-mini-button" type="button"></button>
                     </p>
                     <p class="modal-item modal-item-child">
@@ -259,7 +259,7 @@
                     </p>
                     <p class="modal-item modal-input-child">
                       <button class="decrement modal-mini-button" type="button"><span class="decrement-icon"></span></button>
-                      <input class="modal-input modal-input-number" type="number" id="children" value="2" max="99">
+                      <input class="modal-input modal-input-number" type="number" id="children" value="2" max="99" name="children">
                       <button class="increment modal-mini-button" type="button"><span class="increment-icon"></span></button>
                     </p>
                     <!-- Четвертая строка -->
