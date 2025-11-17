@@ -860,11 +860,6 @@ body {
   right: 0;
 }
 
-.range-wrapper-inputs {
-  display: flex;
-  justify-content: center;
-}
-
 .catalog-filter-label {
   display: flex;
   position: relative;
@@ -1262,12 +1257,6 @@ body {
   width: 577px;
   text-align: center;
   margin: 0 auto;
-}
-
-.modal-form {
-  border: none;
-  padding: 0;
-  margin: 0;
 }
 
 .modal-close-button {
