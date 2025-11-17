@@ -65,7 +65,8 @@
             <h2 class="header-2">
               Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h2>
-            <p class="slogan-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+            <p class="slogan-text">
+              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
           </header>
           <ul class="advantages-list">
@@ -108,8 +109,7 @@
               />
             </li>
             <li class="advantages-item main-background-color">
-              <h3 class="header-3">Там есть <br>
-                мост дьявола</h3>
+              <h3 class="header-3">Там есть мост дьявола</h3>
               <p class="text">Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
             </li>
@@ -120,14 +120,14 @@
             <h2 class="header-2">
               Приезжайте в Седону отдохнуть в комфорте и уюте!
             </h2>
-            <p class="slogan-text">Опытный персонал и качественное обслуживание!
+            <p class="slogan-text">
+              Опытный персонал и качественное обслуживание!
             </p>
           </header>
           <ul class="comfort-list">
             <li class="comfort-item additional-background-color-1 additional-padding-top-bottom">
                 <h3 class="header-3">Жильё</h3>
-                <p class="text">Рекомендуем пожить
-                  в настоящем мотеле,
+                <p class="text">Рекомендуем пожитьв настоящем мотеле,
                   всё как в кино!
                 </p>
             </li>
@@ -148,15 +148,17 @@
         </section>
         <section class="find text-align-center">
           <h2 class="header-2">Заинтересовались?</h2>
-          <p class="slogan-text">Укажите предполагаемые даты поездки,
+          <p class="slogan-text">
+            Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button btn-big" href="modal.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+          <a class="button btn-big" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
         <section class="subscribe subscribe-theme-custom text-align-center">
           <div class="subscribe-container">
             <h2 class="subscribe-title header-2">Подпишитесь на рассылку</h2>
-            <p class="subscribe-text slogan-text">Только полезная информация и никакого спама,
+            <p class="subscribe-text slogan-text">
+                Только полезная информация и никакого спама,
                 честное бойскаутское!
             </p>
             <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
@@ -210,6 +212,66 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <div class="modal-wrapper">
+            <header class="modal-header">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <a href="index.html" class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </a>
+          </header>
+            <section class="modal-content">
+              <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="modal-list">
+                    <!-- Первая строка -->
+                    <p class="modal-item">
+                      <label class="modal-label modal-label-check-in" for="check-in">Дата заезда:</label>
+                    </p>
+                    <p class="modal-item modal-input-check-in">
+                      <input class="modal-input modal-input-date" type="date" id="check-in" name="check-in">
+                      <span class="modal-message modal-error-message">Мы не можем отправить вас в прошлое.</span>
+                    </p>
+                    <!-- Вторая строка -->
+                    <p class="modal-item">
+                      <label class="modal-label modal-label-departure" for="departure">Дата выезда:</label>
+                    </p>
+                    <p class="modal-item modal-input-departure">
+                      <input class="modal-input modal-input-date" type="date" id="departure" name="departure">
+                      <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+                    </p>
+                    <!-- Третья строка -->
+                    <p class="modal-item ">
+                      <label class="modal-label modal-label-adults" for="adults">Взрослые:</label>
+                    </p>
+                    <p class="modal-item modal-input-adults">
+                      <button class="decrement modal-mini-button" type="button"></button>
+                      <input class="modal-input modal-input-number" type="number" id="adults" value="2" max="99" name="adults">
+                      <button class="increment modal-mini-button" type="button"></button>
+                    </p>
+                    <p class="modal-item modal-item-child">
+                      <label class="modal-label modal-label-child" for="children">Дети:</label>
+                      <a class="link-info" href="#">
+                        <span class="modal-icon-info"></span>
+                        <span class="tooltip">Укажите количество детей,
+                           которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      </a>
+                    </p>
+                    <p class="modal-item modal-input-child">
+                      <button class="decrement modal-mini-button" type="button"><span class="decrement-icon"></span></button>
+                      <input class="modal-input modal-input-number" type="number" id="children" value="2" max="99" name="children">
+                      <button class="increment modal-mini-button" type="button"><span class="increment-icon"></span></button>
+                    </p>
+                    <!-- Четвертая строка -->
+                    <p class="modal-item modal-button">
+                      <button class="button btn-big additional-button" type="submit">Найти</button>
+                    </p>
+                  </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
