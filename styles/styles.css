@@ -327,10 +327,6 @@ body {
   white-space: pre-line;
 }
 
-.text-color {
-  color: #fff;
-}
-
 /* Фоны */
 
 .additional-background-color-1 {
@@ -874,7 +870,6 @@ body {
   position: relative;
 }
 
-
 .button-wrapper {
   width: 191px;
   margin-left: 70px;
@@ -954,14 +949,6 @@ body {
   text-align: left;
   margin: 0;
   padding: 0;
-}
-
-.catalog-title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000;
 }
 
 .filter {
@@ -1177,13 +1164,6 @@ body {
 }
 
 /* Пагинация */
-
-.divider {
-  width: 1060px;
-  margin: 0 auto;
-  border-bottom: 1px solid #e6e6e6;
-  padding-top: 40px;
-}
 
 .pagination {
   display: flex;
